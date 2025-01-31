@@ -1,0 +1,26 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "LLC World",
+    "description": "",
+    "home_page_url": "https://startupsolellc.github.io/llcworld",
+    "feed_url": "https://startupsolellc.github.io/llcworld/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Nazmi Ozer"
+    },
+    "items": [
+        {
+            "id": "https://startupsolellc.github.io/llcworld/merhaba-statik.html",
+            "url": "https://startupsolellc.github.io/llcworld/merhaba-statik.html",
+            "title": "Merhaba Statik",
+            "content_html": "\n  <p>\n    \n  </p>",
+            "author": {
+                "name": "Nazmi Ozer"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-02-01T01:11:43+03:00",
+            "date_modified": "2025-02-01T01:11:43+03:00"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>LLC World</title>
+    <link href="https://startupsolellc.github.io/llcworld/feed.xml" rel="self" />
+    <link href="https://startupsolellc.github.io/llcworld" />
+    <updated>2025-02-01T01:11:43+03:00</updated>
+    <author>
+        <name>Nazmi Ozer</name>
+    </author>
+    <id>https://startupsolellc.github.io/llcworld</id>
+
+    <entry>
+        <title>Merhaba Statik</title>
+        <author>
+            <name>Nazmi Ozer</name>
+        </author>
+        <link href="https://startupsolellc.github.io/llcworld/merhaba-statik.html"/>
+        <id>https://startupsolellc.github.io/llcworld/merhaba-statik.html</id>
+
+        <updated>2025-02-01T01:11:43+03:00</updated>
+            <summary></summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+</feed>

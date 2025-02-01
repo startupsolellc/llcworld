@@ -1,11 +1,10 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "LLC Formation Guides, Reviews &amp; Business Resources | LLC World",
+    "title": "LLC World",
     "description": "",
     "home_page_url": "https://startupsolellc.github.io/llcworld",
     "feed_url": "https://startupsolellc.github.io/llcworld/feed.json",
     "user_comment": "",
-    "icon": "https://startupsolellc.github.io/llcworld/media/website/logo4-white-205px.png",
     "author": {
         "name": "Nazmi Ozer"
     },

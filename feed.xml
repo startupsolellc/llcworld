@@ -65,7 +65,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://startupsolellc.github.io/llcworld/media/posts/3/llc-formation.png" height="768" width="1024" alt=""  sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-xs.webp 640w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-sm.webp 768w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-md.webp 1024w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-lg.webp 1366w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-xl.webp 1600w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-2xl.webp 1920w">
+      <img loading="lazy" src="https://startupsolellc.github.io/llcworld/media/posts/3/llc-formation.png" height="768" width="1024" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-xs.webp 300w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-sm.webp 480w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-md.webp 768w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-lg.webp 1024w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-xl.webp 1360w ,https://startupsolellc.github.io/llcworld/media/posts/3/responsive/llc-formation-2xl.webp 1600w">
       
     </figure>
 

@@ -3,7 +3,7 @@
     <title>LLC World</title>
     <link href="https://llcworld.net/feed.xml" rel="self" />
     <link href="https://llcworld.net" />
-    <updated>2025-02-01T23:05:30+03:00</updated>
+    <updated>2025-02-01T23:06:05+03:00</updated>
     <author>
         <name>Nazmi Ozer</name>
     </author>
@@ -44,6 +44,7 @@
         <link href="https://llcworld.net/how-to-start-an-llc/index.html"/>
         <id>https://llcworld.net/how-to-start-an-llc/index.html</id>
         <media:content url="https://llcworld.net/media/posts/3/how-to-start-an-llc.jpg" medium="image" />
+            <category term="LLC Formation"/>
 
         <updated>2025-02-01T01:39:48+03:00</updated>
             <summary>

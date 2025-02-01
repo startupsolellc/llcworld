@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://llcworld.net/sitemap.xml
+Sitemap: https://www.llcworld.net/sitemap.xml

@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://www.llcworld.net/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://llcworld.net/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://www.llcworld.net/</loc>
+<loc>https://llcworld.net/</loc>
 </url>
 <url>
-<loc>https://www.llcworld.net/contact/</loc>
+<loc>https://llcworld.net/contact/</loc>
 <lastmod>2025-02-02T00:23:48+03:00</lastmod>
 <image:image>
-<image:loc>https://www.llcworld.net/media/posts/2/contact-us-2.jpg</image:loc>
+<image:loc>https://llcworld.net/media/posts/2/contact-us-2.jpg</image:loc>
 <image:title><![CDATA[Contact]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://www.llcworld.net/how-to-start-an-llc/</loc>
+<loc>https://llcworld.net/how-to-start-an-llc/</loc>
 <lastmod>2025-02-01T23:06:05+03:00</lastmod>
 <image:image>
-<image:loc>https://www.llcworld.net/media/posts/3/how-to-start-an-llc.jpg</image:loc>
+<image:loc>https://llcworld.net/media/posts/3/how-to-start-an-llc.jpg</image:loc>
 <image:title><![CDATA[How to start an llc]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.llcworld.net/media/posts/3/llc-formation.png</image:loc>
+<image:loc>https://llcworld.net/media/posts/3/llc-formation.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://www.llcworld.net/privacy-policy/</loc>
+<loc>https://llcworld.net/privacy-policy/</loc>
 <lastmod>2025-02-01T15:41:43+03:00</lastmod>
 </url>
 <url>
-<loc>https://www.llcworld.net/test-page/</loc>
+<loc>https://llcworld.net/test-page/</loc>
 <lastmod>2025-02-02T00:49:06+03:00</lastmod>
 <image:image>
-<image:loc>https://www.llcworld.net/media/posts/6/how-to-start-an-llc.jpg</image:loc>
+<image:loc>https://llcworld.net/media/posts/6/how-to-start-an-llc.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.llcworld.net/media/posts/6/how-to-start-an-llc-2.jpg</image:loc>
+<image:loc>https://llcworld.net/media/posts/6/how-to-start-an-llc-2.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://www.llcworld.net/what-is-a-registered-agent/</loc>
+<loc>https://llcworld.net/what-is-a-registered-agent/</loc>
 <lastmod>2025-02-01T23:05:30+03:00</lastmod>
 <image:image>
-<image:loc>https://www.llcworld.net/media/posts/4/what-is-registered-agent.jpg</image:loc>
+<image:loc>https://llcworld.net/media/posts/4/what-is-registered-agent.jpg</image:loc>
 <image:title><![CDATA[What is Registered Agent]]></image:title>
 </image:image>
 </url>

@@ -3,12 +3,53 @@
     <title>LLC World</title>
     <link href="https://llcworld.net/feed.xml" rel="self" />
     <link href="https://llcworld.net" />
-    <updated>2025-02-01T23:06:05+03:00</updated>
+    <updated>2025-02-02T00:49:06+03:00</updated>
     <author>
         <name>Nazmi Ozer</name>
     </author>
     <id>https://llcworld.net</id>
 
+    <entry>
+        <title>Test Page</title>
+        <author>
+            <name>Nazmi Ozer</name>
+        </author>
+        <link href="https://llcworld.net/test-page/index.html"/>
+        <id>https://llcworld.net/test-page/index.html</id>
+
+        <updated>2025-02-02T00:49:06+03:00</updated>
+            <summary>
+                <![CDATA[
+                    1. Resmi Açın ve Hazırlayın Görseli açın: Photoshop’ta optimize etmek istediğiniz resmi açın. Gereksiz katmanları birleştirin: Eğer çok katmanlı bir dosyanız varsa, görseli son haline getirmeden önce (örneğin, “Flatten Image” komutuyla) katmanları birleştirin. Boyutlandırma: Web’de kullanılacak maksimum boyutları belirleyin. Resmin gereğinden büyük olması, hem yükleme&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    1. Resmi Açın ve Hazırlayın
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://llcworld.net/media/posts/6/how-to-start-an-llc.jpg" height="800" width="1200" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-xs.webp 300w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-sm.webp 480w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-md.webp 768w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-lg.webp 1024w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-xl.webp 1360w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-2xl.webp 1600w">
+      <figcaption>export</figcaption>
+    </figure>
+
+  <p>
+    Görseli açın: Photoshop’ta optimize etmek istediğiniz resmi açın.<br>Gereksiz katmanları birleştirin: Eğer çok katmanlı bir dosyanız varsa, görseli son haline getirmeden önce (örneğin, “Flatten Image” komutuyla) katmanları birleştirin.
+  </p>
+
+    <figure class="post__image post__image--center">
+      <img loading="lazy" src="https://llcworld.net/media/posts/6/how-to-start-an-llc-2.jpg" height="800" width="1200" alt=""  sizes="(max-width: 48em) 100vw, 768px" srcset="https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-2-xs.webp 300w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-2-sm.webp 480w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-2-md.webp 768w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-2-lg.webp 1024w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-2-xl.webp 1360w ,https://llcworld.net/media/posts/6/responsive/how-to-start-an-llc-2-2xl.webp 1600w">
+      <figcaption>Save For web</figcaption>
+    </figure>
+
+  <p>
+    Boyutlandırma: Web’de kullanılacak maksimum boyutları belirleyin. Resmin gereğinden büyük olması, hem yükleme süresini uzatır hem de gereksiz veri taşır. Görselin yeniden boyutlandırılması, optimize edilmiş dosya boyutunu düşürmek için önemli bir adımdır.<br>2. "Save for Web (Legacy)" veya "Export As" Kullanımı<br>Menüden erişim:<br>Photoshop CC’nin eski sürümlerinde: File &gt; Export &gt; Save for Web (Legacy)<br>Daha yeni sürümlerde: File &gt; Export &gt; Export As<br>Format Seçimi:<br>JPEG: Fotoğraflar ve renk geçişlerinin yoğun olduğu resimler için uygundur.<br>PNG: Şeffaflık gerekiyorsa veya keskin kenarlı grafikler varsa tercih edilebilir.<br>WebP: Mümkünse, daha iyi sıkıştırma ve kalite dengesi için kullanılabilir (Photoshop eklentisi gerekebilir).<br>3. Kalite ve Sıkıştırma Ayarları<br>Kalite Ayarı:<br>JPEG için kalite slider’ını yaklaşık 60-70 civarına getirin. Bu aralık, dosya boyutunu düşürürken kaliteyi korumada genellikle iyi sonuç verir.<br>"Export As" penceresinde de benzer ayarları bulabilirsiniz; kaliteyi ayarlarken önizleme penceresindeki sonucu dikkatlice kontrol edin.<br>Progressive Seçeneği (JPEG için):<br>Progressive JPEG seçeneğini aktif edin. Bu seçenek, resmin yüklenirken kademeli olarak görünmesini sağlar ve kullanıcı deneyimini artırır.<br>Metadata Temizliği:<br>Metadata (EXIF bilgileri) resmin dosya boyutunu artırabilir. "Save for Web" penceresinde “Metadata” kısmını “None” olarak ayarlayın.<br>Görüntü Önizlemesi:<br>Sağdaki önizleme penceresinde, yaptığınız ayarların resmin kalitesi üzerindeki etkisini kontrol edin. Gerekirse ayarları biraz daha iyileştirin.<br>4. Son Kaydetme İşlemi<br>Dosya Boyutu Kontrolü:<br>Ayarlarınızı yaptıktan sonra, dosya boyutunun hedeflerinize uygun olup olmadığını kontrol edin. Çok büyük dosya boyutları, web performansını olumsuz etkiler.<br>Kaydetme:<br>Ayarlardan memnun kaldıktan sonra “Save” butonuna basarak resmi kaydedin. Dosya adını ve hedef dizini belirleyin.<br>5. Test ve Geri Bildirim<br>Test Etme:<br>Kaydettiğiniz resmi web sitenizde kullanmadan önce, Google PageSpeed Insights gibi araçlarla test edin. Bu, optimizasyonunuzun performansa nasıl yansıdığını görmenize yardımcı olur.<br>Gerekirse Düzenleme:<br>Eğer kalite kaybı istenenden fazla veya dosya boyutu hâlâ yüksek görünüyorsa, ayarlar üzerinde biraz daha oynamanız gerekebilir. Birkaç deneme yaparak ideal dengeyi bulabilirsiniz.<br>Bu adımları izleyerek, Photoshop’ta resimlerinizi hem kaliteden ödün vermeden hem de dosya boyutunu minimuma indirerek optimize edebilirsiniz. Böylece web sitenizin görsel performansı iyileşecek ve Google PageSpeed Lighthouse testinde daha iyi sonuçlar elde edeceksiniz.
+  </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>What is a Registered Agent?</title>
         <author>
@@ -19,7 +60,7 @@
         <media:content url="https://llcworld.net/media/posts/4/what-is-registered-agent.jpg" medium="image" />
             <category term="LLC Formation"/>
 
-        <updated>2025-02-01T13:40:58+03:00</updated>
+        <updated>2025-02-01T23:05:30+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://llcworld.net/media/posts/4/what-is-registered-agent.jpg" alt="What is Registered Agent" />
@@ -46,7 +87,7 @@
         <media:content url="https://llcworld.net/media/posts/3/how-to-start-an-llc.jpg" medium="image" />
             <category term="LLC Formation"/>
 
-        <updated>2025-02-01T01:39:48+03:00</updated>
+        <updated>2025-02-01T23:06:05+03:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://llcworld.net/media/posts/3/how-to-start-an-llc.jpg" alt="How to start an llc" />

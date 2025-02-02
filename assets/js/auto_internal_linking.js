@@ -1,5 +1,5 @@
 window.onload = function() {
-    console.log("Auto Internal Linking script is running!"); // Debug log (Bir kez çalışacak)
+    console.log("Auto Internal Linking script is running!"); // Debug log
 
     let keywords = {
         "LLC formation": "/non-resident-llc-formation/",
@@ -35,14 +35,11 @@ window.onload = function() {
         console.log("Processing block:", block); // Debug log
 
         for (let key in keywords) {
-            let regex = new RegExp("\\b" + key.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + "(?!([^<]+)?>)", "gi");
+            let regex = new RegExp("\\b" + key.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + "\\b", "i"); // Sadece ilk eşleşmeyi alacak
 
             if (!html.includes(`<a href="${keywords[key]}">`)) {
-                let newHtml = html.replace(regex, `<a href="${keywords[key]}">$&</a>`);
-                if (newHtml !== html) {
-                    console.log(`Linked "${key}" to ${keywords[key]}`); // Debug log
-                    html = newHtml;
-                }
+                html = html.replace(regex, `<a href="${keywords[key]}">$&</a>`); // Sadece ilk eşleşmeyi değiştir
+                console.log(`Linked "${key}" to ${keywords[key]}`); // Debug log
             }
         }
         block.innerHTML = html;

@@ -2,25 +2,25 @@ window.onload = function() {
     console.log("Auto Internal Linking script is running!"); // Debug log
 
     let keywords = {
-        "LLC formation": "/tag/non-resident-llc-formation/",
-        "forming an LLC": "/tag/non-resident-llc-formation/",
-        "start an LLC": "/tag/non-resident-llc-formation/",
-        "form an LLC": "/tag/non-resident-llc-formation/",
-        "LLC taxes": "/tag/non-resident-llc-taxes/",
-        "EIN application": "/tag/non-resident-llc-taxes/",
-        "tax compliance": "/tag/non-resident-llc-taxes/",
-        "business bank account": "/tag/non-resident-business-banking/",
-        "LLC banking": "/tag/non-resident-business-banking/",
-        "US bank for LLC": "/tag/non-resident-business-banking/",
-        "LLC formation services": "/tag/best-llc-services/",
-        "registered agent": "/tag/best-llc-services/",
-        "best LLC services": "/tag/best-llc-services/",
-        "LLC compliance": "/tag/llc-legal-faqs/",
-        "legal requirements": "/tag/llc-legal-faqs/",
-        "LLC legal FAQs": "/tag/llc-legal-faqs/",
-        "payment gateways": "/tag/non-resident-payment-gateways/",
-        "Stripe for LLC": "/tag/non-resident-payment-gateways/",
-        "online payments": "/tag/non-resident-payment-gateways/"
+        "LLC formation": "/tags/non-resident-llc-formation/",
+        "forming an LLC": "/tags/non-resident-llc-formation/",
+        "start an LLC": "/tags/non-resident-llc-formation/",
+        "form an LLC": "/tags/non-resident-llc-formation/",
+        "LLC taxes": "/tags/non-resident-llc-taxes/",
+        "EIN application": "/tags/non-resident-llc-taxes/",
+        "tax compliance": "/tags/non-resident-llc-taxes/",
+        "business bank account": "/tags/non-resident-business-banking/",
+        "LLC banking": "/tags/non-resident-business-banking/",
+        "US bank for LLC": "/tags/non-resident-business-banking/",
+        "LLC formation services": "/tags/best-llc-services/",
+        "registered agent": "/tags/best-llc-services/",
+        "best LLC services": "/tags/best-llc-services/",
+        "LLC compliance": "/tags/llc-legal-faqs/",
+        "legal requirements": "/tags/llc-legal-faqs/",
+        "LLC legal FAQs": "/tags/llc-legal-faqs/",
+        "payment gateways": "/tags/non-resident-payment-gateways/",
+        "Stripe for LLC": "/tags/non-resident-payment-gateways/",
+        "online payments": "/tags/non-resident-payment-gateways/"
     };
 
     let contentBlocks = document.querySelectorAll(".content__entry, .post-content, .page-content");

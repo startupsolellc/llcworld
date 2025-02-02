@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+    console.log("Auto Internal Linking script is running!"); // Debug log (Bir kez çalışacak)
+
     let keywords = {
         "LLC formation": "/non-resident-llc-formation/",
+        "forming an LLC": "/non-resident-llc-formation/",
         "start an LLC": "/non-resident-llc-formation/",
         "form an LLC": "/non-resident-llc-formation/",
         "LLC taxes": "/non-resident-llc-taxes/",
@@ -19,17 +22,27 @@ document.addEventListener("DOMContentLoaded", function() {
         "Stripe for LLC": "/non-resident-payment-gateways/",
         "online payments": "/non-resident-payment-gateways/"
     };
-    
-    let contentBlocks = document.querySelectorAll(".post-content, .page-content");
-    
+
+    let contentBlocks = document.querySelectorAll(".content__entry, .post-content, .page-content");
+
     contentBlocks.forEach(block => {
         let html = block.innerHTML;
+        console.log("Processing block:", block); // Debug log
+
         for (let key in keywords) {
-            let regex = new RegExp("\\b(" + key + ")\\b", "i"); // Yalnızca ilk eşleşmeyi alır
-            if (regex.test(html)) {
-                html = html.replace(regex, `<a href="${keywords[key]}">$1</a>`);
+            let regex = new RegExp("\\b" + key.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + "(?!([^<]+)?>)", "gi");
+
+            // Eğer kelime zaten linklenmişse tekrar linkleme yapma!
+            if (!html.includes(`<a href="${keywords[key]}">`)) {
+                let newHtml = html.replace(regex, `<a href="${keywords[key]}">$&</a>`);
+                if (newHtml !== html) {
+                    console.log(`Linked "${key}" to ${keywords[key]}`); // Debug log
+                    html = newHtml;
+                }
             }
         }
         block.innerHTML = html;
     });
+
+    console.log("Internal linking script execution completed."); // Kod tamamlandı mesajı
 });

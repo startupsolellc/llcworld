@@ -577,16 +577,15 @@ window.addEventListener('scroll', () => {
 })();
 document.addEventListener("DOMContentLoaded", function () {
     var sidebarTOC = document.getElementById("sidebar-toc");
-    var contentArea = document.querySelector(".content__entry.u-inner");
-
-    if (!sidebarTOC || !contentArea) {
-        console.log("TOC veya içerik alanı bulunamadı.");
-        return;
-    }
 
     function updateTOC() {
-        var headers = contentArea.querySelectorAll("h2, h3");
+        var contentArea = document.querySelector(".content__entry.u-inner");
+        if (!contentArea) {
+            console.log("İçerik alanı bulunamadı, tekrar deneniyor...");
+            return;
+        }
 
+        var headers = contentArea.querySelectorAll("h2, h3");
         if (headers.length === 0) {
             console.log("Başlıklar bulunamadı, tekrar kontrol ediliyor...");
             return;
@@ -605,19 +604,20 @@ document.addEventListener("DOMContentLoaded", function () {
         sidebarTOC.innerHTML = tocHTML;
     }
 
-    // İçerik değişimini gözlemle
+    // İçerik yüklenmesini bekle ve güncelle
     var observer = new MutationObserver(function (mutations) {
         mutations.forEach(function (mutation) {
             if (mutation.addedNodes.length) {
                 updateTOC(); // Başlıklar yüklendiğinde TOC'yi güncelle
-                observer.disconnect(); // Gözlemlemeyi durdur
             }
         });
     });
 
-    // İçerik değişimini izlemeye başla
-    observer.observe(contentArea, { childList: true, subtree: true });
+    var contentArea = document.querySelector(".content__entry.u-inner");
+    if (contentArea) {
+        observer.observe(contentArea, { childList: true, subtree: true });
+    }
 
-    // İlk kontrolü yap
-    setTimeout(updateTOC, 1000);
+    // İlk deneme için 1.5 saniye sonra çalıştır
+    setTimeout(updateTOC, 1500);
 });

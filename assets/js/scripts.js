@@ -575,3 +575,22 @@ window.addEventListener('scroll', () => {
 		}
 	}
 })();
+document.addEventListener("DOMContentLoaded", function () {
+    var sidebarTOC = document.getElementById("sidebar-toc");
+    var headers = document.querySelectorAll("article h2, article h3"); // H2 ve H3 başlıklarını al
+
+    if (!sidebarTOC || headers.length === 0) {
+        return; // Eğer sidebar TOC yoksa veya başlık bulunmuyorsa işlemi durdur
+    }
+
+    var tocHTML = "<ul>";
+
+    headers.forEach(function (header) {
+        var id = header.innerText.replace(/\s+/g, '-').toLowerCase(); // Başlıktan id oluştur
+        header.setAttribute("id", id); // Başlığa id ekle
+        tocHTML += `<li><a href="#${id}">${header.innerText}</a></li>`; // Link oluştur
+    });
+
+    tocHTML += "</ul>";
+    sidebarTOC.innerHTML = tocHTML; // TOC'yi sidebar'a ekle
+});

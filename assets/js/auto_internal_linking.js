@@ -46,4 +46,48 @@ window.onload = function() {
     });
 
     console.log("Internal linking script execution completed."); // Kod tamamlandı mesajı
+
+    // Table of Contents (TOC) Integration
+    var sidebarTOC = document.getElementById("sidebar-toc");
+
+    function updateTOC() {
+        var contentArea = document.querySelector(".content__entry.u-inner");
+        if (!contentArea) {
+            console.log("İçerik alanı bulunamadı, tekrar deneniyor...");
+            return;
+        }
+
+        var headers = contentArea.querySelectorAll("h2, h3");
+        if (headers.length === 0) {
+            console.log("Başlıklar bulunamadı, tekrar kontrol ediliyor...");
+            return;
+        }
+
+        console.log("Başlıklar bulundu, TOC güncelleniyor...");
+        var tocHTML = "<ul>";
+
+        headers.forEach(function (header, index) {
+            var id = "toc-" + index;
+            header.setAttribute("id", id);
+            tocHTML += `<li><a href="#${id}">${header.innerText}</a></li>`;
+        });
+
+        tocHTML += "</ul>";
+        sidebarTOC.innerHTML = tocHTML;
+    }
+
+    var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+            if (mutation.addedNodes.length) {
+                updateTOC();
+            }
+        });
+    });
+
+    var contentArea = document.querySelector(".content__entry.u-inner");
+    if (contentArea) {
+        observer.observe(contentArea, { childList: true, subtree: true });
+    }
+
+    setTimeout(updateTOC, 1500);
 };

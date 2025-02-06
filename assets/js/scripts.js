@@ -576,25 +576,48 @@ window.addEventListener('scroll', () => {
 	}
 })();
 document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        var sidebarTOC = document.getElementById("sidebar-toc");
-        var headers = document.querySelectorAll(".content__entry.u-inner h2, .content__entry.u-inner h3"); // Doğru bölgedeki başlıkları al
+    var sidebarTOC = document.getElementById("sidebar-toc");
+    var contentArea = document.querySelector(".content__entry.u-inner");
 
-        if (!sidebarTOC || headers.length === 0) {
-            console.log("TOC bulunamadı veya başlık yok.");
+    if (!sidebarTOC || !contentArea) {
+        console.log("TOC veya içerik alanı bulunamadı.");
+        return;
+    }
+
+    function updateTOC() {
+        var headers = contentArea.querySelectorAll("h2, h3");
+
+        if (headers.length === 0) {
+            console.log("Başlıklar bulunamadı, tekrar kontrol ediliyor...");
             return;
         }
 
+        console.log("Başlıklar bulundu, TOC güncelleniyor...");
         var tocHTML = "<ul>";
 
         headers.forEach(function (header, index) {
-            var id = "toc-" + index; // Eğer başlıklarda id yoksa otomatik id ekliyoruz
+            var id = "toc-" + index;
             header.setAttribute("id", id);
             tocHTML += `<li><a href="#${id}">${header.innerText}</a></li>`;
         });
 
         tocHTML += "</ul>";
         sidebarTOC.innerHTML = tocHTML;
-        console.log("TOC Güncellendi!");
-    }, 500);
+    }
+
+    // İçerik değişimini gözlemle
+    var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+            if (mutation.addedNodes.length) {
+                updateTOC(); // Başlıklar yüklendiğinde TOC'yi güncelle
+                observer.disconnect(); // Gözlemlemeyi durdur
+            }
+        });
+    });
+
+    // İçerik değişimini izlemeye başla
+    observer.observe(contentArea, { childList: true, subtree: true });
+
+    // İlk kontrolü yap
+    setTimeout(updateTOC, 1000);
 });

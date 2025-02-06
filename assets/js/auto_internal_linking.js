@@ -70,15 +70,20 @@ window.onload = function() {
         }
 
         console.log("Başlıklar bulundu, TOC güncelleniyor...");
-        var tocHTML = "<ul>";
+        var tocHTML = "<div class='toc-container'>";
 
         headers.forEach(function (header, index) {
             var id = "toc-" + index;
             header.setAttribute("id", id);
-            tocHTML += `<li><a href="#${id}">${header.innerText}</a></li>`;
+            tocHTML += `
+                <label class="toc-item">
+                    <input type="radio" name="toc" onclick="document.getElementById('${id}').scrollIntoView({ behavior: 'smooth' })">
+                    <span>${header.innerText}</span>
+                </label>
+            `;
         });
 
-        tocHTML += "</ul>";
+        tocHTML += "</div>";
         sidebarTOC.innerHTML = tocHTML;
     }
 

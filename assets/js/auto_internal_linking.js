@@ -50,8 +50,13 @@ window.onload = function() {
     // Table of Contents (TOC) Integration
     var sidebarTOC = document.getElementById("sidebar-toc");
     var sidebarTOCContainer = document.getElementById("sidebar-toc-container");
-    
+
     function updateTOC() {
+        if (!sidebarTOC) {
+            console.log("Sidebar TOC bulunamadı, işlem iptal ediliyor.");
+            return;
+        }
+
         var contentArea = document.querySelector(".content__entry.u-inner");
         if (!contentArea) {
             console.log("İçerik alanı bulunamadı, tekrar deneniyor...");

@@ -576,21 +576,25 @@ window.addEventListener('scroll', () => {
 	}
 })();
 document.addEventListener("DOMContentLoaded", function () {
-    var sidebarTOC = document.getElementById("sidebar-toc");
-    var headers = document.querySelectorAll("article h2, article h3"); // H2 ve H3 başlıklarını al
+    setTimeout(function () {
+        var sidebarTOC = document.getElementById("sidebar-toc");
+        var headers = document.querySelectorAll(".content__entry.u-inner h2, .content__entry.u-inner h3"); // Doğru bölgedeki başlıkları al
 
-    if (!sidebarTOC || headers.length === 0) {
-        return; // Eğer sidebar TOC yoksa veya başlık bulunmuyorsa işlemi durdur
-    }
+        if (!sidebarTOC || headers.length === 0) {
+            console.log("TOC bulunamadı veya başlık yok.");
+            return;
+        }
 
-    var tocHTML = "<ul>";
+        var tocHTML = "<ul>";
 
-    headers.forEach(function (header) {
-        var id = header.innerText.replace(/\s+/g, '-').toLowerCase(); // Başlıktan id oluştur
-        header.setAttribute("id", id); // Başlığa id ekle
-        tocHTML += `<li><a href="#${id}">${header.innerText}</a></li>`; // Link oluştur
-    });
+        headers.forEach(function (header, index) {
+            var id = "toc-" + index; // Eğer başlıklarda id yoksa otomatik id ekliyoruz
+            header.setAttribute("id", id);
+            tocHTML += `<li><a href="#${id}">${header.innerText}</a></li>`;
+        });
 
-    tocHTML += "</ul>";
-    sidebarTOC.innerHTML = tocHTML; // TOC'yi sidebar'a ekle
+        tocHTML += "</ul>";
+        sidebarTOC.innerHTML = tocHTML;
+        console.log("TOC Güncellendi!");
+    }, 500);
 });

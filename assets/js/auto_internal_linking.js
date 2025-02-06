@@ -63,7 +63,7 @@ window.onload = function() {
             return;
         }
 
-        var headers = contentArea.querySelectorAll("h2, h3");
+        var headers = contentArea.querySelectorAll("h1, h2");
         if (headers.length === 0) {
             console.log("Başlıklar bulunamadı, tekrar kontrol ediliyor...");
             return;

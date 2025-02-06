@@ -49,7 +49,8 @@ window.onload = function() {
 
     // Table of Contents (TOC) Integration
     var sidebarTOC = document.getElementById("sidebar-toc");
-
+    var sidebarTOCContainer = document.getElementById("sidebar-toc-container");
+    
     function updateTOC() {
         var contentArea = document.querySelector(".content__entry.u-inner");
         if (!contentArea) {
@@ -90,4 +91,11 @@ window.onload = function() {
     }
 
     setTimeout(updateTOC, 1500);
+
+    // Hide TOC on Homepage
+    if (!document.querySelector(".content__entry.u-inner")) {
+        if (sidebarTOCContainer) {
+            sidebarTOCContainer.style.display = "none"; // Sadece TOC'yi gizle, sidebar kalacak
+        }
+    }
 };
